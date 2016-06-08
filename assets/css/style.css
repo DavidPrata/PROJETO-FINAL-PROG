@@ -1,12 +1,30 @@
 @charset "utf-8";
 
 
-html, body, p { 
+html, body, p  { 
     margin: 0; 
-    padding: 0; 
-    
-    
+    padding: 0;
 }
+
+body.index{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+    color: #fff;
+	}
+a:hover {
+	text-decoration: underline; 
+	color: #fff;
+    
+	}
+a:active {
+	text-decoration: none;
+    color: #fff;
+	}
 
 @font-face {font-family: "TradeGothicW01-BoldCn20";
     src: url("http://db.onlinewebfonts.com/t/a3940925813f3eb4e86348877cb7bcae.eot");
@@ -37,7 +55,6 @@ src: url(‘Lombok.otf’);
 
 .bg_container video {
         width: 100%;
-        height: 100%;
         position: relative;
         height: 100%;
         z-index: 0;
@@ -61,6 +78,10 @@ src: url(‘Lombok.otf’);
 
 
 @media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
     .colm_1 {width: calc(18.72%);}
     .colm_2 {width: calc(39.04%);}
     .colm_3 {width: calc(59.36%);}
@@ -71,6 +92,790 @@ src: url(‘Lombok.otf’);
     [class*="colm_"]:last-child {margin-right: 0;}
 
     [class*="colm_"] {float:left;}
+    
+    .titles {
+        position: absolute;
+        text-align: center;
+        top: 25%;
+        z-index: 12;
+    }
+    
+    .rosaq {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 6vw;
+        background-color: rgba(254,206,168, 0.56);
+        color: #fff;
+        width: 30%;
+        margin-left: 40%;
+        position: absolute;
+    }
+    
+    .rosaw {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 6vw;
+        background-color: rgba(232,74,95, 0.56);
+        color: #fff;
+        width: 30%;
+        margin-left: 22%;
+        position: absolute;
+        margin-top: 7%;
+    }
+    
+    .rosar {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 6.5vw;
+        background-color: rgba(34,34,34, 0.56);
+        color: #fff;
+        width: 30%;
+        margin-left: 49%;
+        position: absolute;
+        margin-top: 7%;
+    }
+    
+    
+    
+    .entrar {
+        position: fixed;
+        font-family: Karla;
+        font-size: 6vw;
+        left: 0;
+        text-align: center;
+        color:white;
+        top: 70%;
+        z-index: 12;
+        text-decoration: inherit;
+        
+    }
+    
+    .bg_container {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .bg_container video {
+        width: auto;
+        height: 100%;
+        left: -100%;
+        
+    }
+    
+    .barracin {
+        background-color: #222;
+        position: fixed;
+        z-index: 80;
+    }
+    
+    
+    .ismtlogo {
+        width: 55px;
+        padding-left: 4%;
+        float: left;
+    }
+    
+    .noismt {
+        font-family: Karla;
+        color: white;
+        font-size: 2.5vw;
+        margin-left: 5%;
+        margin-top: 5%;
+        float: left;
+    }
+    
+    .multitext {
+        font-family: Karla;
+        color: white;
+        font-size: 3vw;
+        margin-left: 56%;
+        float: left;
+        
+    }
+    
+    .hambrug {
+        position: absolute;
+        right: 0;
+        width: 15%;
+        
+    }
+    
+    .menuescondido {
+        background-color: rgba(34,34,34,0.9);
+        position: absolute;
+        margin-top: 12%;
+        display: none;
+        
+    }
+    
+    .menuescondidos {
+        display: none;
+    }
+    
+    .esquerda1 {
+        margin-top: 6%;
+    }
+    
+    .lismenu {
+        font-family: Karla;
+        color: white;
+        font-size: 3vw;
+    }
+    
+    .lismenu li {
+        list-style: none;
+        display: inline;
+        padding-right: 2%;
+    }
+    
+    
+    .biaback {
+        background-image: url("imagens/biamobilee.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        
+    }
+    
+    
+    .as1 {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 7vw;
+        background-color: #222;
+        color: #fff;
+        text-align: center;
+        margin-top: 47%;
+        
+    }
+    
+    .as2 {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 7vw;
+        background-color: rgb(254,206,168);
+        color: #222;
+        margin-top: 1%;
+        padding-left: 1%;
+        text-align: center;
+        
+        
+    }
+    
+    .pontosu {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 7vw;
+        background-color: rgb(255,132,124);
+        color: #222;
+        text-align: center;
+        margin-top: 1%;
+        margin-left: 1%;
+        
+    }
+    
+    .pontosum {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 8vw;
+        background-color: rgb(232,74,95);
+        color: #222;
+        text-align: center;
+        margin-top: 1%;
+        display: inline;
+        
+    }
+    
+    
+    .botaobranco {
+        align-items: center;
+        margin-left: 15%;
+        margin-top: 60%;
+        margin-bottom: 50%;
+        border-radius: 100%;
+        width: 75px;
+        height: 75px;
+        background: linear-gradient(142.73deg,rgba(254,206,168,.95) 0,rgba(232,74,95,.95) 80%);
+    }
+    
+    .provedorbotao {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 3vw;
+        color: white;
+        padding-top: 35%;
+        padding-bottom: 38%;
+        text-align: center;
+    }
+    
+    .divedabia {
+        margin-top: 20%;
+        background-color: #222;
+        height: 105px;
+        float: right;
+        padding-bottom: 5%;
+    }
+    
+    .classdabia {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 11vw;
+        color: white;
+        margin-left: 3%;
+        margin-top: 2%;
+    }
+    
+    .clasdaclas {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 4vw;
+        color: white;
+        margin-left: 3%;
+        
+        
+    }
+    
+    .primeirasection {
+        background-color: #222;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .divedabiadois {
+        background-color: #222;
+        float: right;
+        padding-top: 1%;
+    }
+    
+    .clasdaclasdois {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 3vw;
+        color: white;
+        margin-left: 3%;
+        
+    }
+    
+    .maisobre {
+        display: none;
+        
+    }
+    
+    
+    
+    .retangulorosa {
+        background-color: rgb(232,74,95); 
+        height: 30px;
+        width: 160px;
+        position: absolute;
+        right: 0;
+        margin-top: 5%;
+        margin-right: 20.7%;
+    }
+    
+    .conheceme {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 2.5vw;
+        text-align: center;
+        padding-top: 2%;
+        
+    }
+    
+    .imagens {
+        padding-top: 14%;
+        text-align: center;
+        padding-bottom: 3%;
+    }
+
+    .aquelafixa { 
+        border: 4px solid #fff;
+        width: 90%;
+        height: auto;
+        
+}
+    
+    .itemgaleria {
+        display: none;
+    }
+
+    .aqueroda img {
+        border: solid 1px #fff;
+        width: auto;
+        height: 10px;
+        opacity:0.5;
+}
+
+    .aqueroda img:hover {
+	   border-color: rgb(232,74,95);
+       opacity:0.5;
+}
+    
+    .right {
+        color: rgb(232,74,95);
+        font-size: 12vw;
+        position: absolute;
+        right: 40%;
+    }
+    
+    .left {
+        color: rgb(255,132,124);
+        font-size: 8vw;
+        position: absolute;
+        right: 50%;
+        
+    }
+    
+    .sbrbia {
+        
+    }
+    
+    .whoami {
+        margin-top: 15%;
+        font-family: Karla;
+        font-size: 7vw;
+        color: #222;
+        background-color: rgb(232,74,95);
+        width: 55%;
+        margin-left: 25%;
+        text-align: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    
+    .porvezes {
+        padding: 3%;
+        text-align: justify;
+        margin-top: 5%;
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 3vw;
+        color: #222;
+        background-color: rgb(254,206,168);
+        line-height: 1.5;
+    }
+    
+    .gostode {
+        padding: 3%;
+        text-align: justify;
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 3vw;
+        background-color: rgb(255,132,124);
+        color: #222;
+    }
+    
+    .espero {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 4vw;
+        text-align: center;
+        color: white;
+        text-align: justify;
+        padding: 4%;
+        margin-top: 1%;
+        padding-bottom: 5%;
+    }
+    
+    .ultimacinza {
+        display: none;
+        
+    }
+    
+    .ultimacinzaa {
+        background-color: #222;
+        height: 3%;
+        position: absolute;
+        padding-bottom: 3%;
+        
+    }
+    
+    .movismt {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 5vw;
+        
+        margin-left: 20%;
+        background: 
+            -webkit-linear-gradient(239.73deg,rgb(14, 88, 80) 0,rgb(232,74,95) 136%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+    
+    .titulosprovedora {
+        position: absolute;
+        right: 0;
+        margin-top:10%;
+    }
+    
+    .aoprovedor {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 11vw;
+        color: rgb(26, 94, 86);
+        background-color: white;
+        text-align: center;
+        text-shadow:#fff 1px -1px 2px, #fff -1px 1px 2px, #fff 1px 1px 2px, #fff -1px -1px 2px;
+    }
+    
+    .aomini {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 4vw;
+        background-color: #222;
+        color: #fff;
+    }
+    
+    
+    .cubo{
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(182.73deg,rgb(255, 255, 255) 0,rgb(14, 88, 80) 70%);
+        position: absolute;
+        z-index: 70;
+        left:15%;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    #quadrados1{
+        margin-top: 60%;
+    }
+    
+    #quadrados2{
+        margin-left: 20%;
+        margin-top: 70%;
+   
+    }
+    
+    #quadrados3{
+        margin-top: 80%;
+    }
+    
+    #quadrados4{
+        margin-top: 60%;
+        margin-left: 60%;
+    }
+    
+    #quadrados5{
+        margin-top: 80%;
+        margin-left: 60%;
+    }
+    
+    #quadrados6{
+        margin-top: 80%;
+        margin-left: 40%;
+    }
+    
+    .rectang {
+        position: absolute;
+        display: none;
+        z-index:20;
+        width: 90%;
+        padding: 10px;
+        left: 20px;
+        margin-top: 100%;
+        text-align: justify;
+        
+    }
+    
+    .cenasperg {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 4vw;
+        background-color: #0e5850;
+        padding:2%;
+        color: #fff;
+    }
+    
+    .cenasresp {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 3vw;
+        margin-top: 2%;
+        background-color: #fff;
+        color: #222;
+        padding: 2%;
+    }
+    
+    .aentrevista {
+        background-color: #222;
+    }
+    
+    .painel {
+        padding-left: 10%;
+        margin-top: 30%;
+        position: absolute;
+        text-align: justify;
+        
+    }
+
+    .painel h3 {
+        background-color: #222;
+        padding: 7px 15px;
+        margin: 0;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 3.8vw;
+        color: white;
+        
+    }
+
+    .painel h3:hover {
+        background-color: rgb(255,132,124);
+        color: #222;
+    }
+
+    .painel h3.active {
+        background-color: rgb(255,132,124);
+        color: #222;
+    }
+
+    .painel p {
+        background-color: rgb(232,74,95);
+        margin: 0;
+        padding: 10px 15px 20px;
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 2.9vw;
+    }
+    
+    .textodolado {
+        padding-top: 3%;
+        padding-bottom: 150%;
+        padding-left: 15%;
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 8vw;
+        background: 
+            -webkit-linear-gradient(239.73deg,rgb(232,74,95) 0,rgb(255,132,124) 136%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+    
+    .exemploumtest {
+        padding-top: 20%;
+        padding-left: 12%;
+        padding-right: 10%;
+        font-family: Karla;
+        font-size: 4.6vw;
+        color: white;
+        background-color: #222;
+    }
+    
+    .professornome {
+        padding-top: 5%;
+        padding-left: 43%;
+        padding-right: 15%;
+        padding-bottom: 10%;
+        font-family: Karla;
+        font-size: 3vw;
+        text-align: justify;
+        color: white;
+        background-color: #222;
+    }
+    
+    .acoes {
+        font-family: Karla;
+    }
+    
+    .acoes h1 {
+        font-size: 7vw;
+        padding-left: 5%;
+        font-family: TradeGothicW01-BoldCn20;
+    }
+    
+    .acoes p {
+        font-size: 5vw;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        font-family: TradeGothicW01-BoldCn20;
+    }
+    
+    .month {
+        padding: 70px 25px;
+        background: rgb(232,74,95);
+    }
+
+    .month ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .month ul li {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    .month .prev {
+        float: left;
+        padding-top: 10px;
+    }
+
+    .month .next {
+        float: right;
+        padding-top: 10px;
+    }
+
+    .weekdays {
+        margin: 0;
+        padding: 10px 0;
+        background-color: #ddd;
+    }
+
+    .weekdays li {
+        display: inline-block;
+        width: 13.6%;
+        color: #666;
+        text-align: center;
+    }
+
+    .days {
+        padding: 10px 0;
+        background: #eee;
+        margin: 0;
+    }
+
+    .days li {
+        list-style-type: none;
+        display: inline-block;
+        width: 13.6%;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size:12px;
+        color: #777;
+    }
+
+    .days li .active {
+        padding: 5px;
+        background: #1abc9c;
+        color: white !important
+    }
+    
+    .finnnn{
+        background-color: #222;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        width: 100%;
+        font: bold 16px Karla;
+        text-align: left;
+        padding: 50px 60px 40px;
+        
+        overflow: hidden;
+    }
+
+    .finnnn .classdofin {
+	   float: left;
+    }
+    
+    .finnnn h3 {
+        color:  #ffffff;
+        font-family:  TradeGothicW01-BoldCn20;
+        font-size: 5vw;
+        margin: 0 0 10px;
+    }
+
+    .finnnn h3 span {
+        color: rgb(232,74,95);
+    }
+
+    .finnnn .linksdabia {
+        color:  #ffffff;
+        margin: 0 0 10px;
+        padding: 0;
+    }
+
+    .finnnn .linksdabia a {
+        display:inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color:  inherit;
+    }
+
+    .finnnn .companhia {
+        color:  #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+    
+    .finnnn .footer-icons {
+        margin-top: 40px;
+        background-color: white;
+    }
+
+    .finnnn .footer-icons a {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        border-radius: 2px;
+        padding-left: 5%;
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 35px;
+        margin-right: 3px;
+        margin-top: 10px;
+        margin-bottom: 3px;
+        margin-left: 10px;
+    }
+    
+    .finnnn .footer-right{
+        float: right;
+    }
+
+    .finnnn .footer-right p{
+        display: inline-block;
+        vertical-align: top;
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 7vw;
+        margin-bottom: 1%;
+        margin: 15px 42px 0 0;
+        color: #ffffff;
+    }
+    
+    .finnnn form{
+        display: inline-block;
+    }
+
+    .finnnn form input,
+    .finnnn form textarea{
+        display: block;
+        border-radius: 3px;
+        box-sizing: border-box;
+        background-color:  #fff;
+        box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+        border: none;
+        resize: none;
+        font: inherit;
+        font-size: 14px;
+        font-weight: normal;
+        color:  #d1d2d2;
+
+        width: 256px;
+        padding: 10px;
+    }
+
+    .finnnn ::-webkit-input-placeholder {
+        color:  #5c666b;
+    }
+
+    .finnnn ::-moz-placeholder {
+        color:  #5c666b;
+        opacity: 1;
+    }
+
+    .finnnn :-ms-input-placeholder{
+        color:  #5c666b;
+    }
+    
+    .finnnn form input{
+        height: 55px;
+        margin-bottom: 15px;
+    }
+
+    .finnnn form textarea{
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .finnnn form button{
+        border-radius: 3px;
+        background-color:  #33383b;
+        color: #ffffff;
+        border: 0;
+        padding: 15px 50px;
+        font-weight: bold;
+        float: right;
+    }
+    
+    .fundologos {
+        width: 90%;
+    }
+    
     
     
     
@@ -93,12 +898,818 @@ src: url(‘Lombok.otf’);
     [class*="colt_"]:last-child {margin-right: 0;}
 
     [class*="colt_"] {float:left;}
+
+    .titles {
+        position: absolute;
+        text-align: center;
+        top: 25%;
+        z-index: 12;
+    }
+    
+    .rosaq {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 6vw;
+        background-color: rgba(254,206,168, 0.56);
+        color: #fff;
+        width: 30%;
+        margin-left: 40%;
+        position: absolute;
+    }
+    
+    .rosaw {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 6vw;
+        background-color: rgba(232,74,95, 0.56);
+        color: #fff;
+        width: 30%;
+        margin-left: 22%;
+        position: absolute;
+        margin-top: 7%;
+    }
+    
+    .rosar {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 6.5vw;
+        background-color: rgba(34,34,34, 0.56);
+        color: #fff;
+        width: 30%;
+        margin-left: 49%;
+        position: absolute;
+        margin-top: 7%;
+    }
+    
+    
+    
+    .entrar {
+        position: fixed;
+        font-family: Karla;
+        font-size: 3vw;
+        left: 0;
+        text-align: center;
+        color:white;
+        top: 70%;
+        z-index: 12;
+        text-decoration: inherit;
+        
+    }
+    
+    .bg_container {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .bg_container video {
+        width: auto;
+        height: 50%;
+        left: -50%;
+        
+    }
+    
+    .barracin {
+        background-color: #222;
+        position: fixed;
+        z-index: 80;
+    }
+    
+    
+    .ismtlogo {
+        width: 70px;
+        padding-left: 4%;
+        float: left;
+    }
+    
+    .noismt {
+        font-family: Karla;
+        color: white;
+        font-size: 1.5vw;
+        margin-left: 5%;
+        margin-top: 5%;
+        float: left;
+    }
+    
+    .multitext {
+        font-family: Karla;
+        color: white;
+        font-size: 1.5vw;
+        margin-left: 67%;
+        float: left;
+        
+    }
+    
+    .hambrug {
+        position: absolute;
+        width: 10%;
+        right:0;
+        margin-right: 5%;
+        
+    }
+    
+    .menuescondido {
+        background-color: rgba(34,34,34,0.9);
+        position: absolute;
+        margin-top: 8.5%;
+        display: none;
+        
+    }
+    
+    .menuescondidos  {
+        color: #222;
+        font-size:0.5vw;
+        margin:0;
+        padding:0;
+        display: none;
+    }
+    
+    .esquerda1 {
+        margin-top: 6%;
+    }
+    
+    .lismenu {
+        font-family: Karla;
+        color: white;
+        font-size: 2vw;
+    }
+    
+    .lismenu li {
+        list-style: none;
+        display: inline;
+        padding-right: 2%;
+        
+        padding-left: 4.5%;
+    }
+    
+    
+    .biaback {
+        background-image: url("imagens/desktoptablete.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        
+    }
+    
+    
+    .as1 {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 5vw;
+        background-color: #222;
+        color: #fff;
+        text-align: center;
+        margin-top: 27%;
+        
+    }
+    
+    .as2 {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 5vw;
+        background-color: rgb(254,206,168);
+        color: #222;
+        margin-top: 1%;
+        padding-left: 1%;
+        text-align: center;
+        
+        
+    }
+    
+    .pontosu {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 5vw;
+        background-color: rgb(255,132,124);
+        color: #222;
+        text-align: center;
+        margin-top: 1%;
+        margin-left: 1%;
+        
+    }
+    
+    .pontosum {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 6vw;
+        background-color: rgb(232,74,95);
+        color: #222;
+        text-align: center;
+        margin-top: 1%;
+        display: inline;
+        
+    }
+    
+    
+    .botaobranco {
+        align-items: center;
+        margin-left: 15%;
+        margin-top: 40%;
+        margin-bottom: 20%;
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        background: linear-gradient(142.73deg,rgba(254,206,168,.95) 0,rgba(232,74,95,.95) 80%);
+    }
+    
+    .provedorbotao {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 2vw;
+        color: white;
+        padding-top: 35%;
+        padding-bottom: 18%;
+        text-align: center;
+    }
+    
+    .divedabia {
+        margin-top: 20%;
+        background-color: #222;
+        height: 105px;
+        float: right;
+        padding-bottom: 10%;
+    }
+    
+    .classdabia {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 8vw;
+        color: white;
+        margin-left: 3%;
+        margin-top: 4%;
+    }
+    
+    .clasdaclas {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 3vw;
+        color: white;
+        margin-left: 3%;
+        
+        
+    }
+    
+    .primeirasection {
+        background-color: #222;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .divedabiadois {
+        background-color: #222;
+        float: right;
+        padding-top: 1%;
+    }
+    
+    .clasdaclasdois {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 2vw;
+        color: white;
+        margin-left: 3%;
+        
+    }
+    
+    .maisobre {
+        display: none;
+        
+    }
+    
+    
+    
+    .retangulorosa {
+        background-color: rgb(232,74,95); 
+        height: 60px;
+        width: 160px;
+        position: absolute;
+        margin-left: 10.7%;
+    }
+    
+    .conheceme {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 2.5vw;
+        text-align: center;
+        padding-top: 2%;
+        
+    }
+    
+    .imagens {
+        padding-top: 14%;
+        text-align: center;
+        padding-bottom: 3%;
+    }
+
+    .aquelafixa { 
+        border: 4px solid #fff;
+        width: 90%;
+        height: auto;
+        
+}
+    
+    .itemgaleria {
+        display: none;
+    }
+
+    .aqueroda img {
+        border: solid 1px #fff;
+        width: auto;
+        height: 10px;
+        opacity:0.5;
+}
+
+    .aqueroda img:hover {
+	   border-color: rgb(232,74,95);
+       opacity:0.5;
+}
+    
+    .right {
+        color: rgb(232,74,95);
+        font-size: 12vw;
+        position: absolute;
+        right: 40%;
+    }
+    
+    .left {
+        color: rgb(255,132,124);
+        font-size: 8vw;
+        position: absolute;
+        right: 50%;
+        
+    }
+    
+    .sbrbia {
+        
+    }
+    
+    .whoami {
+        margin-top: 15%;
+        font-family: Karla;
+        font-size: 7vw;
+        color: #222;
+        background-color: rgb(232,74,95);
+        width: 55%;
+        margin-left: 30%;
+        text-align: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    
+    .porvezes {
+        padding: 3%;
+        text-align: justify;
+        margin-top: 5%;
+        margin-left: 15%;
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 3vw;
+        color: #222;
+        background-color: rgb(254,206,168);
+        line-height: 1.5;
+        
+    }
+    
+    .gostode {
+        padding: 3%;
+        text-align: justify;
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 3vw;
+        background-color: rgb(255,132,124);
+        color: #222;
+        margin-left: 15%;
+    }
+    
+    .espero {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 4vw;
+        text-align: center;
+        color: white;
+        text-align: justify;
+        padding: 4%;
+        margin-top: 1%;
+        margin-left: 15%;
+        padding-bottom: 5%;
+    }
+    
+    .ultimacinza {
+        display: none;
+        
+    }
+    
+    .ultimacinzaa {
+        background-color: #222;
+        height: 3%;
+        position: absolute;
+        padding-bottom: 3%;
+        
+    }
+    
+    .movismt {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 4vw;
+        
+        margin-left: 10%;
+        background: 
+            -webkit-linear-gradient(239.73deg,rgb(14, 88, 80) 0,rgb(232,74,95) 136%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+    
+    .titulosprovedora {
+        position: absolute;
+        right: 0;
+        margin-top:10%;
+    }
+    
+    .aoprovedor {
+        margin-top: 5%;
+        margin-right: 2%;
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 5vw;
+        color: rgb(26, 94, 86);
+        background-color: white;
+        text-align: center;
+        text-shadow:#fff 1px -1px 2px, #fff -1px 1px 2px, #fff 1px 1px 2px, #fff -1px -1px 2px;
+    }
+    
+    .aomini {
+        margin-right: 2%;
+        padding: 5px;
+        text-align: justify;
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 2vw;
+        background-color: #222;
+        color: #fff;
+    }
+    
+    
+    .cubo{
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(182.73deg,rgb(255, 255, 255) 0,rgb(14, 88, 80) 70%);
+        position: absolute;
+        z-index: 70;
+        left:15%;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    #quadrados1{
+        margin-top: 15%;
+    }
+    
+    #quadrados2{
+        margin-left: 5%;
+        margin-top: 25%;
+   
+    }
+    
+    #quadrados3{
+        margin-top: 15%;
+        margin-top: 35%;
+    }
+    
+    #quadrados4{
+        margin-top: 20%;
+        margin-left: 40%;
+    }
+    
+    #quadrados5{
+        margin-top: 20%;
+        margin-left: 50%;
+    }
+    
+    #quadrados6{
+        margin-top: 40%;
+        margin-left: 35%;
+    }
+    
+    .rectang {
+        position: absolute;
+        display: none;
+        z-index:20;
+        width: 90%;
+        padding: 10px;
+        margin-left: 35px;
+        margin-top: 60%;
+        text-align: justify;
+        
+    }
+    
+    .cenasperg {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 2vw;
+        background-color: #0e5850;
+        padding:2%;
+        color: #fff;
+    }
+    
+    .cenasresp {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 1.5vw;
+        margin-top: 2%;
+        background-color: #fff;
+        color: #222;
+        padding: 2%;
+    }
+    
+    .aentrevista {
+        background-color: #222;
+    }
+    
+    .painel {
+        padding-left: 7%;
+        margin-top: 30%;
+        position: absolute;
+        text-align: justify;
+        
+    }
+
+    .painel h3 {
+        background-color: #222;
+        padding: 7px 15px;
+        margin: 0;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 2.8vw;
+        color: white;
+        
+    }
+
+    .painel h3:hover {
+        background-color: rgb(255,132,124);
+        color: #222;
+    }
+
+    .painel h3.active {
+        background-color: rgb(232,74,95);
+        color: #222;
+    }
+
+    .painel p {
+        background-color: rgb(255,132,124);
+        margin: 0;
+        padding: 10px 15px 20px;
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 2.2vw;
+    }
+    
+    .textodolado {
+        padding-top: 3%;
+        padding-bottom: 110%;
+        padding-left: 35%;
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 8vw;
+        background: 
+            -webkit-linear-gradient(239.73deg,rgb(232,74,95) 0,rgb(255,132,124) 136%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+    
+    .exemploumtest {
+        padding-top: 5%;
+        padding-left: 12%;
+        padding-right: 10%;
+        font-family: Karla;
+        font-size: 3vw;
+        color: white;
+        background-color: #222;
+    }
+    
+    .professornome {
+        padding-top: 2%;
+        padding-left: 60%;
+        padding-bottom: 5%;
+        font-family: Karla;
+        font-size: 2vw;
+        text-align: justify;
+        color: white;
+        background-color: #222;
+    }
+    
+    .acoes {
+        font-family: Karla;
+    }
+    
+    .acoes h1 {
+        font-size: 7vw;
+        padding-left: 5%;
+        font-family: TradeGothicW01-BoldCn20;
+    }
+    
+    .acoes p {
+        font-size: 5vw;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        font-family: TradeGothicW01-BoldCn20;
+    }
+    
+    .month {
+        padding: 70px 25px;
+        background: rgb(232,74,95);
+    }
+
+    .month ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .month ul li {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    .month .prev {
+        float: left;
+        padding-top: 10px;
+    }
+
+    .month .next {
+        float: right;
+        padding-top: 10px;
+    }
+
+    .weekdays {
+        margin: 0;
+        padding: 10px 0;
+        background-color: #ddd;
+    }
+
+    .weekdays li {
+        display: inline-block;
+        width: 13.6%;
+        color: #666;
+        text-align: center;
+    }
+
+    .days {
+        padding: 10px 0;
+        background: #eee;
+        margin: 0;
+    }
+
+    .days li {
+        list-style-type: none;
+        display: inline-block;
+        width: 13.6%;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size:12px;
+        color: #777;
+    }
+
+    .days li .active {
+        padding: 5px;
+        background: #1abc9c;
+        color: white !important
+    }
+    
+    .finnnn{
+        background-color: #222;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        width: 100%;
+        font: bold 16px Karla;
+        text-align: left;
+        padding: 50px 60px 40px;
+        
+        overflow: hidden;
+    }
+
+    .finnnn .classdofin {
+	   float: left;
+    }
+    
+    .finnnn h3 {
+        color:  #ffffff;
+        font-family:  TradeGothicW01-BoldCn20;
+        font-size: 5vw;
+        margin: 0 0 10px;
+    }
+
+    .finnnn h3 span {
+        color: rgb(232,74,95);
+    }
+
+    .finnnn .linksdabia {
+        color:  #ffffff;
+        margin: 0 0 10px;
+        padding: 0;
+    }
+
+    .finnnn .linksdabia a {
+        display:inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color:  inherit;
+    }
+
+    .finnnn .companhia {
+        color:  #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+    
+    .finnnn .footer-icons {
+        margin-top: 25px;
+        background-color: white;
+        width: 63%;
+    }
+
+    .finnnn .footer-icons a {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        border-radius: 2px;
+        padding-left: 5%;
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 35px;
+        margin-right: 3px;
+        margin-top: 10px;
+        margin-bottom: 3px;
+        margin-left: 10px;
+    }
+    
+    .finnnn .footer-right{
+        float: right;
+        margin-top: 20px;
+    }
+
+    .finnnn .footer-right p{
+        display: inline-block;
+        vertical-align: top;
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 7vw;
+        margin-bottom: 1%;
+        margin: 15px 153px 0 0;
+        color: #ffffff;
+    }
+    
+    .finnnn form{
+        display: inline-block;
+    }
+
+    .finnnn form input,
+    .finnnn form textarea{
+        display: block;
+        border-radius: 3px;
+        box-sizing: border-box;
+        background-color:  #fff;
+        box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+        border: none;
+        resize: none;
+        font: inherit;
+        font-size: 14px;
+        font-weight: normal;
+        color:  #d1d2d2;
+
+        width: 256px;
+        padding: 10px;
+    }
+
+    .finnnn ::-webkit-input-placeholder {
+        color:  #5c666b;
+    }
+
+    .finnnn ::-moz-placeholder {
+        color:  #5c666b;
+        opacity: 1;
+    }
+
+    .finnnn :-ms-input-placeholder{
+        color:  #5c666b;
+    }
+    
+    .finnnn form input{
+        height: 35px;
+        margin-bottom: 15px;
+    }
+
+    .finnnn form textarea{
+        height: 90px;
+        margin-bottom: 20px;
+    }
+
+    .finnnn form button{
+        border-radius: 3px;
+        background-color:  #33383b;
+        color: #ffffff;
+        border: 0;
+        padding: 15px 50px;
+        font-weight: bold;
+        float: right;
+    }
+    
+    .fundologos {
+        width: 90%;
+    }
+    
+    
     
     
     
 }
 
 @media screen and (min-width: 991px) {
+    
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
     
     .col_1 {width: 8.33%;}
     .col_2 {width: 16.66%;}
@@ -119,13 +1730,45 @@ src: url(‘Lombok.otf’);
     [class*="col_"] {float:left;}
     
     .titles {
-        position: fixed;
-        width: 15%;
-        left: 0;
-        margin-left: 42%;
-        top: 30%;
+        position: absolute;
+        text-align: center;
+        top: 25%;
         z-index: 12;
     }
+    
+    .rosaq {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 4vw;
+        background-color: rgba(254,206,168, 0.56);
+        color: #fff;
+        width: 20%;
+        margin-left: 40%;
+        position: absolute;
+    }
+    
+    .rosaw {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 4vw;
+        background-color: rgba(232,74,95, 0.56);
+        color: #fff;
+        width: 20%;
+        margin-left: 30%;
+        position: absolute;
+        margin-top: 4%;
+    }
+    
+    .rosar {
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 5.5vw;
+        background-color: rgba(34,34,34, 0.56);
+        color: #fff;
+        width: 20%;
+        margin-left: 48%;
+        position: absolute;
+        margin-top: 5%;
+    }
+    
+    
     
     .entrar {
         position: fixed;
@@ -140,17 +1783,20 @@ src: url(‘Lombok.otf’);
         
     }
     
+    
+    
     .barracin {
         background-color: #222;
         position: fixed;
-        z-index: 50;
+        z-index: 80;
         
     }
     
     
     .ismtlogo {
-        width: 5.8%;;
+        width: 15%;;
         padding-left: 4%;
+        float: left;
     }
     
     .noismt {
@@ -158,30 +1804,40 @@ src: url(‘Lombok.otf’);
         color: white;
         font-size: 0.8vw;
         margin-left: 5%;
-        margin-top: 15%;
-        
+        margin-top: 5%;
+        float: left;
     }
     
     .multitext {
         font-family: Karla;
         color: white;
         font-size: 1vw;
-        margin-left: 50%;
+        margin-left: 42%;
+        float: left;
         
     }
     
-    .esquerda1 {
-        margin-top: 6%;
+    
+    .hambrug {
+        width: 0;
+    } 
+    
+    
+    .menuescondidos {
+        position: absolute;
+        right: 0;
+        padding-right: 5%;
     }
+    
     
     .lismenu {
         list-style-type: none;
         font-family: Karla;
         color: white;
-        font-size: 1vw;
+        font-size: 0.8vw;
         padding-top: 1.5%;
         text-align:  right;
-        margin-right: 20%;
+        margin-right: 10%;
     }
     
     .lismenu li {
@@ -308,13 +1964,7 @@ src: url(‘Lombok.otf’);
     }
     
     .maisobre {
-        font-family: TradeGothicW01-BoldCn20;
-        text-decoration-line: white;
-        font-size: 1.5vw;
-        color: white;
-        float: right;
-        margin-right: 3%;
-        text-align: right;
+        display: none;
         
     }
     
@@ -368,6 +2018,7 @@ src: url(‘Lombok.otf’);
         position: absolute;
         right: 45%;
         margin-top: -17px;
+        cursor: pointer;
     }
     
     .left {
@@ -375,7 +2026,7 @@ src: url(‘Lombok.otf’);
         position: absolute;
         right: 47%;
         margin-top: -20px;
-        
+        cursor: pointer;
     }
     
     .sbrbia {
@@ -439,9 +2090,8 @@ src: url(‘Lombok.otf’);
     .movismt {
         font-family: TradeGothicW01-BoldCn20;
         font-size: 4vw;
-        margin: 5%;
-        margin-top: 10%;
-        margin-left: 25%;
+        margin-top: 15%;
+        margin-left:10%;
         background: 
             -webkit-linear-gradient(239.73deg,rgb(14, 88, 80) 0,rgb(232,74,95) 136%);
             -webkit-background-clip: text;
@@ -458,14 +2108,13 @@ src: url(‘Lombok.otf’);
         font-family: TradeGothicW01-BoldCn20;
         font-size: 6vw;
         color: rgb(26, 94, 86);
-        text-align: right;
-        margin-right: 5%;
         text-shadow:#fff 1px -1px 2px, #fff -1px 1px 2px, #fff 1px 1px 2px, #fff -1px -1px 2px;
+        cursor: pointer;
     }
     
     .aomini {
         font-family: TradeGothicW01-BoldCn20;
-        font-size: 1vw;
+        font-size: 2vw;
         color: white; 
         text-align: right;
         margin-right: 5%;
@@ -600,11 +2249,10 @@ src: url(‘Lombok.otf’);
     
     .exemploumtest {
         padding-top: 25%;
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 12%;
+        padding-right: 10%;
         font-family: Karla;
-        font-size: 3vw;
-        text-align: justify;
+        font-size: 2.6vw;
     }
     
     .professornome {
@@ -636,7 +2284,7 @@ src: url(‘Lombok.otf’);
     
     .month {
         padding: 70px 25px;
-        background: #1abc9c;
+        background: rgb(232,74,95);
     }
 
     .month ul {
@@ -696,16 +2344,147 @@ src: url(‘Lombok.otf’);
         color: white !important
     }
     
+    .finnnn{
+        background-color: #222;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        width: 100%;
+        font: bold 16px Karla;
+        text-align: left;
+        padding: 50px 60px 40px;
+        
+        overflow: hidden;
+    }
+
+    .finnnn .classdofin {
+	   float: left;
+    }
     
+    .finnnn h3 {
+        color:  #ffffff;
+        font-family:  TradeGothicW01-BoldCn20;
+        font-size: 5vw;
+        margin: 0 0 10px;
+    }
+
+    .finnnn h3 span {
+        color: rgb(232,74,95);
+    }
+
+    .finnnn .linksdabia {
+        color:  #ffffff;
+        margin: 0 0 10px;
+        padding: 0;
+    }
+
+    .finnnn .linksdabia a {
+        display:inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color:  inherit;
+    }
+
+    .finnnn .companhia {
+        color:  #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
     
+    .finnnn .footer-icons {
+        margin-top: 40px;
+        background-color: white;
+    }
+
+    .finnnn .footer-icons a {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        border-radius: 2px;
+        padding-left: 5%;
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 35px;
+        margin-right: 3px;
+        margin-top: 10px;
+        margin-bottom: 3px;
+        margin-left: 10px;
+    }
     
+    .finnnn .footer-right{
+        float: right;
+    }
+
+    .finnnn .footer-right p{
+        display: inline-block;
+        vertical-align: top;
+        font-family: TradeGothicW01-BoldCn20;
+        font-size: 7vw;
+        margin-bottom: 1%;
+        margin: 15px 42px 0 0;
+        color: #ffffff;
+    }
     
+    .finnnn form{
+        display: inline-block;
+    }
+
+    .finnnn form input,
+    .finnnn form textarea{
+        display: block;
+        border-radius: 3px;
+        box-sizing: border-box;
+        background-color:  #fff;
+        box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+        border: none;
+        resize: none;
+        font: inherit;
+        font-size: 14px;
+        font-weight: normal;
+        color:  #d1d2d2;
+
+        width: 256px;
+        padding: 10px;
+    }
+
+    .finnnn ::-webkit-input-placeholder {
+        color:  #5c666b;
+    }
+
+    .finnnn ::-moz-placeholder {
+        color:  #5c666b;
+        opacity: 1;
+    }
+
+    .finnnn :-ms-input-placeholder{
+        color:  #5c666b;
+    }
     
+    .finnnn form input{
+        height: 55px;
+        margin-bottom: 15px;
+    }
+
+    .finnnn form textarea{
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .finnnn form button{
+        border-radius: 3px;
+        background-color:  #33383b;
+        color: #ffffff;
+        border: 0;
+        padding: 15px 50px;
+        font-weight: bold;
+        float: right;
+    }
     
-    
-    
-    
-    
+    .fundologos {
+        width: 90%;
+    }
     
     
 }

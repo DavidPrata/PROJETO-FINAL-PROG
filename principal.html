@@ -32,52 +32,67 @@
     
     
     <body>
-        <header>
+        <header class="row">
             <nav class="barracin colm_5 colt_8 col_12">
-                <div class="row estaefixa">
-                    <img class="ismtlogo colm_1 colt_1 col_2" src="assets/css/imagens/logo-ismtt.png">
-                    <div class=" colm_1 colt_1 col_2">
+                <div class="colm_4 colt_3 col_4">
+                    <img class="ismtlogo" src="assets/css/imagens/logo-ismtt.png">
+                    <div style="float:left; width:199px;">
                         <p class="noismt">INSTITUTO SUPERIOR MIGUEL TORGA</p>
                         <p class="multitext">MULTIMÉDIA</p>
-                    </div>    
-                    
-                    <ul class="lismenu colm_3 colt_6 col_8">
-                        <li>SOBRE</li>
-                        <li>PROVEDOR</li>
-                        <li>TESTEMUNHOS</li>
-                        <li>AÇÕES</li>
-                        <li>CONTACTOS</li>
+                    </div>
+                    <img class="hambrug" src="assets/css/imagens/ham.png"></img>
+                </div>
+                    <div class="menuescondido colm_5 colt_8 col_8" id="menuescondido">
+                        <ul class="lismenu colm_5 colt_8 col_8">
+                            <li><a href="#link1">SOBRE</a></li>
+                            <li><a href="#link2">PROVEDOR</a></li>
+                            <li><a href="#link3">ENTREVISTA</a></li>
+                            <li><a href="#link4">TESTEMUNHOS</a></li>
+                            <li><a href="#link5">CONTACTOS</a></li>
+                        </ul>
+                    </div>
+            
+                <div class="menuescondidos colm_5 colt_2 col_8" id="menuescondidos">
+                    <ul class="lismenu colm_5 colt_8 col_8">
+                        <li><a href="#link1">SOBRE</a></li>
+                        <li><a href="#link2">PROVEDOR</a></li>
+                        <li><a href="#link3">ENTREVISTA</a></li>
+                        <li><a href="#link4">TESTEMUNHOS</a></li>
+                        <li><a href="#link5">CONTACTOS</a></li>
                     </ul>
-                </div>    
+                </div>     
+            
+            
+            
             </nav>
             </header>
             
             <main>
-                <section class="biaback colm_5 colt_8 col_12">
+                <section class="biaback colm_5 colt_8 col_12" >
                     <div class="row">
                         
                         <div class="esquerda1 colm_5 colt_8 col_12">
-                            <p class="as1 colm_1 colt_2 col_4">VEZ E VOZ</p>
+                            <p class="as1 colm_2 colt_3 col_4">VEZ E VOZ</p>
                         </div>
                     
                         <div class="colm_5 colt_8 col_12">
                         <p class="as2 colm_1 colt_1 col_2">PARA</p> 
                             
         
-                        <p class="pontosu colm_1 colt_1 col_1" id="pontosu">OS</p>
+                        <p class="pontosu colm_1 colt_2 col_1" id="pontosu">OS</p>
                         </div>
                         
                         <div class="colm_5 colt_8 col_12">
-                            <p class="pontosum colm_1 colt_1 col_4" id="pontosum">ESTUDANTES</p>
+                            <p class="pontosum colm_2 colt_3 col_4" id="pontosum">ESTUDANTES</p>
                        </div>
                         
-                        <div class="colm_5 colt_2 col_6">
+                        <div class="colm_2 colt_3 col_6">
                             <div class="botaobranco">
-                                <p class="provedorbotao">PROVEDOR<br>ESTUDANTE</p>
+                                <p class="provedorbotao"><a href="#link2">PROVEDOR<br>ESTUDANTE</a></p>
                             </div>
                         </div>
                         
-                        <div class="divedabia colm_5 colt_2 col_4">
+                        <div class="divedabia colm_3 colt_4 col_4">
                             <p class="classdabia">BEATRIZ DIAS</p>
                             <p class="clasdaclas">Alguém que tem como objectivo principal melhorar a qualidade dos serviços da Universidade.</p>
                             
@@ -88,9 +103,9 @@
                     </div>        
                 </section>  
                 
-                <section class="primeirasection colm_5 colt_8 col_12">
+                <section id="link1" class="primeirasection colm_5 colt_8 col_12">
                     <div class="row">
-                    <div class="divedabiadois colm_5 colt_2 col_6">
+                    <div class="divedabiadois colm_3 colt_4 col_6">
                         <p class="clasdaclasdois">O facto de finalmente estar a estudar uma área que sempre gostei, deixa-me realizada! E saber que um dia vou fazer disto vida, é bom.</p>
                         <a href="#" class="maisobre">Ver mais...</a>
                     </div>
@@ -101,7 +116,7 @@
                         </div>
                     </div> 
                         
-                    <div class="imagens col_8" id="slides">
+                    <div class="imagens colm_5 colt_ 4 col_8" id="slides">
                         
                         <p>
                             <img class="aquelafixa" id="aquelafixa" src="assets/css/imagens/slider1.jpg">
@@ -133,10 +148,10 @@
                         
                     </div>     
                         
-                    <div class="sbrbia col_6">
+                    <div class="sbrbia colm_5 colt_7 col_6">
                         <p class="whoami">Quem sou eu?</p>
                         <p class="porvezes">Por vezes, quando me encontro sozinha, páro para refletir sobre esta grande questão. No fundo, penso que nunca encontrarei a resposta à mesma. Tudo aquilo que posso dizer é que sou uma Jovem Adulta, tenho 24 anos e sou de Águeda, Aveiro.</p>
-                        <p class="gostode">Gosto de Indie Music e Eletronica; Gosto e venero filmes de drama, porque sei que através deles posso recolher sensções, perceções de vidas diferentes da minha; Gosto de Design minimalista; Adoro aquitetura!</p>
+                        <p class="gostode">Gosto de Indie Music e Eletrónica; Gosto e venero filmes de drama, porque sei que através deles posso recolher sensções, perceções de vidas diferentes da minha; Gosto de Design minimalista; Adoro aquitetura!</p>
                             
                         <p class="espero">Espero um dia trabalhar na Área Web Design ou na Área da Animação!</p>
                     </div>
@@ -144,23 +159,23 @@
                     </div> 
                 </section>
                 
-                <section class="colm_5 colt_8 col_12">
+                <section id="link2" class="colm_5 colt_8 col_12">
                     <div class="row">
-                        <div class="bg_container col_12 colt_8 colm_5">
+                        <div class="bg_container colm_5 colt_8 col_12">
                             <video height="400" autoplay loop> 
-                            <source class="col_12" src="assets/video/video2.mp4" type="video/mp4">
+                            <source class="colm_5 colt_8 col_12" src="assets/video/video2.mp4" type="video/mp4">
                             </video>
                         </div>
                         
-                        <div class="col_12 colt_4 col_5 ultimacinza">
+                        <div class="col_12 colt_5 col_5 ultimacinza">
                         </div>
                         
-                        <div class="col_4 colt_2 col_2 ultimacinzaa">
+                        <div class="colm_2 colt_2 col_3 ultimacinzaa">
                             <p class="movismt">#WeLoveISM</p>
                             
                         </div>
                         
-                        <div class="col_4 colt_2 col_2 titulosprovedora">
+                        <div class="colm_3 colt_2 col_4 titulosprovedora">
                         <p class="aoprovedor">PROVEDOR ESTUDANTE?</p>
                             <p class="aomini">Obtém as tuas respostas.<br>Coloca o teu mouse sobre os círculos.</p>
                         </div>
@@ -218,43 +233,168 @@
                     </div>
                 </section>
                 
-                <section class="colm_5 colt_8 col_12 aentrevista">
+                <section id="link3" class="aentrevista colm_5 colt_8 col_12 ">
                 <div class="row">
                     
-                    <div class="painel colm_5 colt_4 col_4">
+                    <div class="painel colm_4 colt_7 col_4">
                         
-                        <h3>Quais são as suas espectativas?</h3>
-                        <p> O futuro do Provedor dependerá muito da forma como os estudantes vão reagir a esta oportunidade, mas é também fundamental o modo como os funcionários e docentes vão encarar a sua acção. Dito de outro modo, o Provedor deve ter capacidade de diálogo e poder de persuasão, mas também é imprescindível a compreensão de todas as partes envolvidas, face à questão que esteja a ser analisada. É preciso que este desafio seja dirigido a todo o Curso e Instituto e não apenas a mim.</p>
+                        <h3>&#9658; Quais são as suas espectativas?</h3>
+                        <p>&#9661; O futuro do Provedor dependerá muito da forma como os estudantes vão reagir a esta oportunidade, mas é também fundamental o modo como os funcionários e docentes vão encarar a sua acção. Dito de outro modo, o Provedor deve ter capacidade de diálogo e poder de persuasão, mas também é imprescindível a compreensão de todas as partes envolvidas, face à questão que esteja a ser analisada. É preciso que este desafio seja dirigido a todo o Curso e Instituto e não apenas a mim.</p>
                         
-                        <h3>Como é que vê a escolha do seu nome para este cargo?</h3>
-                        <p>É com este perfil que me identifico, isto é, alguém que tem como objectivo principal melhorar a a qualidade dos serviços da Universidade.</p>
+                        <h3>&#9658; Como é que vê a escolha do seu nome para este cargo?</h3>
+                        <p>&#9661; É com este perfil que me identifico, isto é, alguém que tem como objectivo principal melhorar a a qualidade dos serviços da Universidade.</p>
                         
-                        <h3>Ao Provedor do Estudante cabe fazer a defesa e promoção dos direitos dos estudantes, como o próprio nome indica. Na prática, como é que esta função se concretiza?</h3>
-                        <p>De várias formas, a mais evidente é recebendo queixas, reclamações ou sugestões dos estudantes. Caberá depois analisar a mensagem, tendo o cuidado de ouvir todas as partes envolvidas e, depois de chegar a uma conclusão, se se justificar, fazer uma recomendação face àquilo que pode ser melhorado. Pode também fazê-lo por iniciativa própria, o regulamento também prevê a hipótese de ser o próprio Provedor a iniciar alguns processos. Mas é importante realçar que o Provedor para além de estar interessado em resolver aquela situação que afecta aquele aluno em particular, visa, com a sua acção, evitar que aquela questão se repita para outros alunos. Portanto, para além da resolução individual do problema, há uma perspectiva mais ampla relacionada com a melhoria do serviço. </p>
+                        <h3>&#9658; Ao Provedor do Estudante cabe fazer a defesa e promoção dos direitos dos estudantes, como o próprio nome indica. Na prática, como é que esta função se concretiza?</h3>
+                        <p>&#9661; De várias formas, a mais evidente é recebendo queixas, reclamações ou sugestões dos estudantes. Caberá depois analisar a mensagem, tendo o cuidado de ouvir todas as partes envolvidas e, depois de chegar a uma conclusão, se se justificar, fazer uma recomendação face àquilo que pode ser melhorado. Pode também fazê-lo por iniciativa própria, o regulamento também prevê a hipótese de ser o próprio Provedor a iniciar alguns processos. Mas é importante realçar que o Provedor para além de estar interessado em resolver aquela situação que afecta aquele aluno em particular, visa, com a sua acção, evitar que aquela questão se repita para outros alunos. Portanto, para além da resolução individual do problema, há uma perspectiva mais ampla relacionada com a melhoria do serviço. </p>
                         
-                        <h3>Que tipo de mensagens ou queixas espera receber com maior frequência?</h3>
-                        <p> A realidade é muito mais rica do que a imaginação. Há alguns tipos de queixas que eu antecipo que possam surgir (relacionadas com serviços administrativos,
+                        <h3>&#9658; Que tipo de mensagens ou queixas espera receber com maior frequência?</h3>
+                        <p>&#9661; A realidade é muito mais rica do que a imaginação. Há alguns tipos de queixas que eu antecipo que possam surgir (relacionadas com serviços administrativos,
 académicos, questões pedagógicas…) mas, com certeza, surgirão outras completamente diferentes daquilo que eu estou à espera. Por exemplo, na véspera de ter tomado posse, um aluno veio falar comigo e disse-me: “Sei que vai ser Provedor do Estudante, eu quero mudar de curso e estou com um problema de equivalências, como é que posso resolvê-lo?” Evidentemente, que se trata de uma questão para ser analisada ao nível da coordenação do curso. Agora imaginemos que as suas razões não são aceites pela coordenação de curso, pode recorrer ao Conselho Pedagógico e se ainda assim não conseguir fazer valer a sua perspectiva, pode recorrer ao Provedor, alertando para uma eventual incorrecção na forma como a questão é encarada. E daí pode, ou não, resultar uma recomendação de melhoria daquele procedimento.</p>
                         
-                        <h3>Que dificuldades antevê para o desempenho destas funções? </h3>
-                        <p>O problema da compreensão do cargo em si. Vou falar pessoalmente com o Presidente da Associação de Estudantes do ISMT, e irei fazer sessões públicas de esclarecimento que assim o entendam. Neste arranque de trabalho e até Dezembro, sensivelmente, pretendo ser um Provedor itinerante. Nomeadamente, é importante que se perceba que não estou a tentar substituir as funções de outros órgãos. Esse não é o meu papel. Por exemplo, a Associação tem, obviamente, o seu espaço, e globalmente é a voz do Estudante. O Provedor o que deve é tentar ter uma perspectiva pela visão do estudante acerca das questões internas do Instituto. </p>
+                        <h3>&#9658; Que dificuldades antevê para o desempenho destas funções? </h3>
+                        <p>&#9661; O problema da compreensão do cargo em si. Vou falar pessoalmente com o Presidente da Associação de Estudantes do ISMT, e irei fazer sessões públicas de esclarecimento que assim o entendam. Neste arranque de trabalho e até Dezembro, sensivelmente, pretendo ser um Provedor itinerante. Nomeadamente, é importante que se perceba que não estou a tentar substituir as funções de outros órgãos. Esse não é o meu papel. Por exemplo, a Associação tem, obviamente, o seu espaço, e globalmente é a voz do Estudante. O Provedor o que deve é tentar ter uma perspectiva pela visão do estudante acerca das questões internas do Instituto. </p>
                         
-                        <h3>Como é que um aluno que necessite da sua atenção para a resolução de um problema pode contactá-lo?</h3>
-                        <p>Pode fazê-lo pessoalmente, por carta, por mensagem electrónica ou por telefone, conforme é indicado na página Web www.ismt.pt/multimedia/provedor, onde os contactos estão disponíveis. O atendimento pessoal será na Rua Augusta, nº 345. É um sítio recatado, onde poderemos falar tranquilamente. </p>    
+                        <h3>&#9658; Como é que um aluno que necessite da sua atenção para a resolução de um problema pode contactá-lo?</h3>
+                        <p>&#9661; Pode fazê-lo pessoalmente, por carta, por mensagem electrónica ou por telefone, conforme é indicado na página Web www.ismt.pt/multimedia/provedor, onde os contactos estão disponíveis. O atendimento pessoal será na Rua Augusta, nº 345. É um sítio recatado, onde poderemos falar tranquilamente. </p>    
                     </div>
                     
-                    <div class="colm_5 colt_4 col_5">
+                    <div class="colm_5 colt_8 col_5">
                     <p class="textodolado">Entrevista a<br>Beatriz Dias</p>
                     </div>
                     
                     </div>
                 </section>
                 
-                <section class="testemunhossec">
+                <section id="link4" class="colm_5 colt_8 col_12">
+                    
+                    <div class="colm_5 colt_8 col_4">
+                    <p class="exemploumtest">"É uma pessoa brilhante, tem um forte pensamento positivo e uma grande capacidade crítica para a resolução de problemas!"</p>
+                        <p class="professornome">Professora Sara Borges </p>
+                    </div>
+                    
+                    <div class="colm_5 colt_8 col_4">
+                    <p class="exemploumtest">"A Beatriz é uma estudante muito querida no âmbito académico. É criativa e tem fortes capacidades de organização."</p>
+                        <p class="professornome">Professor Rui Rodrigues</p>
+                    </div>
+                    
+                    <div class="colm_5 colt_8 col_4">
+                    <p class="exemploumtest">"Para além de ser uma pessoa de extrema confiança em si própria, é alguém muito organizada e trabalhadora!"</p>
+                        <p class="professornome">Professor Frederico Fonseca</p>
+                    </div>
                 
+                </section>
+                
+                <section class="acoes colm_5 colt_8 col_12">
+                    <h1>A minha ação depende do teu voto!</h1>
+                    <p>Marca o dia <u>5 de Junho</u> na tua agenda e vota: <b>Beatriz Dias!</b></p>
+
+                        <div class="month">      
+                          <ul>
+                            <li class="prev">❮</li>
+                            <li class="next">❯</li>
+                            <li style="text-align:center">
+                              Junho<br>
+                              <span style="font-size:18px">2016</span>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <ul class="weekdays">
+                          <li>Qua</li>
+                          <li>Qui</li>
+                          <li>Sex</li>
+                          <li>Sáb</li>
+                          <li>Dom</li>
+                          <li>Seg</li>
+                          <li>Ter</li>
+                        </ul>
+
+                        <ul class="days">  
+                          <li>1</li>
+                          <li>2</li>
+                          <li>3</li>
+                          <li>4</li>    
+                          <li><span class="active">5</span></li>
+                          <li>6</li>
+                          <li>7</li>
+                          <li>8</li>
+                          <li>9</li>
+                          <li>10</li>
+                          <li>11</li>
+                          <li>12</li>
+                          <li>13</li>
+                          <li>14</li>
+                          <li>15</li>
+                          <li>16</li>
+                          <li>17</li>
+                          <li>18</li>
+                          <li>19</li>
+                          <li>20</li>
+                          <li>21</li>
+                          <li>22</li>
+                          <li>23</li>
+                          <li>24</li>
+                          <li>25</li>
+                          <li>26</li>
+                          <li>27</li>
+                          <li>28</li>
+                          <li>29</li>
+                          <li>30</li>
+                        </ul>
+                    
+                            <iframe class="mapaismt colm_5 colt_8 col_12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.8073121488505!2d-8.415248684627345!3d40.21334897938927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f9717dc9d6a3%3A0xa20dc3b81788a2f5!2sISMT+-+Instituto+Superior+Miguel+Torga!5e0!3m2!1spt-PT!2spt!4v1465078960210" height="200" frameborder="0" style="border:0"></iframe>
+                    
+                </section>
             </main>
             
-        
+            <footer id="link5" class="finnnn colm_5 colt_8 col_12">
+
+			<div class="classdofin">
+
+				<h3>Beatriz<span>Dias</span></h3>
+
+				<p class="linksdabia">
+					<a href="#link1">Sobre</a>
+					·
+					<a href="#link2">Provedor</a>
+					·
+					<a href="#link3">Entrevista</a>
+					·
+					<a href="#link4">Testemunhos</a>
+					·
+					<a href="#link5">Contactos</a>
+					·
+					<a href="index.html">Home</a>
+				</p>
+
+				<p class="companhia">Design by Dparst &copy; 2016</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><img  class="fundologos" src="assets/css/imagens/fb-art.jpg"></a>
+					<a href="#"><img class="fundologos" src="assets/css/imagens/Twitter_logo_blue.png"></i></a>
+					<a href="#"><img class="fundologos"  src="assets/css/imagens/LinkedIn_logo_initials-2.png"></i></a>
+					<a href="#"><img class="fundologos"  src="assets/css/imagens/github-256.png"></i></a>
+
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p>Subscrever:</p>
+
+				<form action="#" method="post">
+
+					<input type="text" name="email" placeholder="Email" />
+					<textarea name="message" placeholder="Message"></textarea>
+					<button>Enviar</button>
+
+				</form>
+
+			</div>
+
+		</footer>
         
     </body>
     
